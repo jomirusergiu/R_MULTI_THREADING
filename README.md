@@ -28,7 +28,7 @@ When the newly-created thread has finished doing it’s bits, we need to join ev
 And that’s all there is to it. The function used as the thread entry point can call other functions, create variables or do anything any other function can do. It can also use the variables set by the other thread.
 When compiling the program, you will also need to add -lpthread to the compile command. ie: 
 ```
-gcc program.c -o program -lpthread
+gcc main.c -o main -lpthread
 ```
 
 Project Usage and Output
