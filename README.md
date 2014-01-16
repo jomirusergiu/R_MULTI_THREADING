@@ -1,7 +1,7 @@
 R_MULTI_THREADING
 =========
 
-R_MULTI_THREADING is a small C++ project showing some basic examples on multhithreading, for executing several tasks in parallel, based on Pthreads.
+R_MULTI_THREADING is a small C project showing some basic examples on multhithreading, for executing several tasks in parallel, based on Pthreads.
 
 INTRODUCTION
 -------------
