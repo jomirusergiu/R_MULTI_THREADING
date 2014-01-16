@@ -26,14 +26,16 @@ Once the pthread_t variable has been defined and the entry point function create
 When the newly-created thread has finished doing it’s bits, we need to join everything back up. This is done by the pthread_join function which takes two parameters: the pthread_t variable used when pthread_create was called (not a pointer this time) and a pointer to the return value pointer (don’t worry about this for now – just set it to NULL). This call will look something like pthread_join(thread0, NULL);
 
 And that’s all there is to it. The function used as the thread entry point can call other functions, create variables or do anything any other function can do. It can also use the variables set by the other thread.
-When compiling the program, you will also need to add -lpthread to the compile command. ie: gcc program.c -o program -lpthread
-
+When compiling the program, you will also need to add -lpthread to the compile command. ie: 
+```
+gcc program.c -o program -lpthread
+```
 
 Project Usage and Output
 -------------
 ```BASH
-RocKKs-iMac:untitled folder 2 RocKK$ gcc main.c -o main -lpthread
-RocKKs-iMac:untitled folder 2 RocKK$ ./main
+RocKK$ gcc main.c -o main -lpthread
+RocKK$ ./main
 x: 0, y: 0
 Second thread - inc_x_thread created
 y increment finished
